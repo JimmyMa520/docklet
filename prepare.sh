@@ -43,7 +43,7 @@ fi
 
 
 # check and install configurable-http-proxy
-which configurable-http-proxy &>/dev/null || { npm config set registry https://registry.npm.taobao.org && npm install -g configurable-http-proxy; }
+which configurable-http-proxy &>/dev/null || { npm install -g configurable-http-proxy; }
 which configurable-http-proxy &>/dev/null || { echo "Error: install configurable-http-proxy failed, you should try again" && exit 1; }
 
 echo ""
